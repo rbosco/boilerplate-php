@@ -4,7 +4,7 @@ namespace Boilerplate\config;
 
 class Application {
     
-    private $request_uri;
+    private $url;
     private $routes;
 
     public function __construct() {
@@ -24,8 +24,8 @@ class Application {
     }
     
     public function getUrl() {
-        $this->request_uri = $_SERVER['REQUEST_URI'];
-        return parse_url($this->request_uri, PHP_URL_PATH);
+        $this->url = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
+        return $this->url;
     }
     
 }
