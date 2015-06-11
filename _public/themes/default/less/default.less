@@ -1,0 +1,62 @@
+/* Relative path to Bootstrap */
+@path_bootstrap  : '../bower_components/bootstrap/less/';
+@path_images : '../images/';
+
+/* Bootstrap variables */
+@import "@{path_bootstrap}variables";
+
+/* Mixins */
+@import "@{path_bootstrap}mixins.less";
+
+/* Reset and dependencies */
+//@import "@{path_bootstrap}normalize.less";
+@import "@{path_bootstrap}print";
+@import "@{path_bootstrap}glyphicons";
+
+/* Bootstrap Core */
+@import "@{path_bootstrap}scaffolding.less";
+@import "@{path_bootstrap}type.less";
+@import "@{path_bootstrap}code";
+@import "@{path_bootstrap}grid.less";
+@import "@{path_bootstrap}tables";
+@import "@{path_bootstrap}forms";
+@import "@{path_bootstrap}buttons";
+
+/* Components */
+@import "@{path_bootstrap}component-animations";
+@import "@{path_bootstrap}dropdowns";
+@import "@{path_bootstrap}button-groups";
+@import "@{path_bootstrap}input-groups";
+//@import "@{path_bootstrap}navs";
+//@import "@{path_bootstrap}navbar";
+//@import "@{path_bootstrap}breadcrumbs";
+//@import "@{path_bootstrap}pagination";
+//@import "@{path_bootstrap}pager";
+@import "@{path_bootstrap}labels";
+//@import "@{path_bootstrap}badges";
+//@import "@{path_bootstrap}jumbotron";
+//@import "@{path_bootstrap}thumbnails";
+@import "@{path_bootstrap}alerts";
+//@import "@{path_bootstrap}progress-bars";
+//@import "@{path_bootstrap}media";
+@import "@{path_bootstrap}list-group";
+//@import "@{path_bootstrap}panels";
+//@import "@{path_bootstrap}responsive-embed";
+//@import "@{path_bootstrap}wells";
+//@import "@{path_bootstrap}close";
+
+/* JS components */
+//@import "@{path_bootstrap}modals";
+//@import "@{path_bootstrap}tooltip";
+//@import "@{path_bootstrap}popovers";
+//@import "@{path_bootstrap}carousel";
+
+/* Utility classes */
+@import "@{path_bootstrap}utilities";
+@import "@{path_bootstrap}responsive-utilities";
+
+/* Yout variables (Overwrites Bootstrap variables if necessary) */
+@import "variables";
+
+/* Page templates */
+@import "pages";

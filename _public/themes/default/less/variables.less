@@ -1,0 +1,45 @@
+/************************************************************************
+PALETA DE CORES
+************************************************************************/
+@corVermelha  : #FF0000;
+@corAzulFraco : #BED2EA;
+@corAzulMedio : blue;
+@corPreta     : #000;
+@corBranca    : #fff;  
+@corCinzaFraco: #888;
+
+/************************************************************************
+TIPOS FONTES
+************************************************************************/
+@fontArial: arial;
+@fontPequena : 1.0em;
+@fontMedia   : 1.5em;
+@fontGrande  : 2.0em;
+
+/************************************************************************
+IMAGENS
+************************************************************************/
+@bgHeader : url("@{path_images}headerbg.jpg");
+@bgMainContent : url("@{path_images}bg_image.jpg");
+@bgFooter : url("@{path_images}main-footer.png");
+
+/************************************************************************
+HELPERS
+************************************************************************/
+//Borda radius todos os lados
+.border-radius-all(@borda){
+    -webkit-border-radius: @borda; 
+    -moz-border-radius: @borda; 
+    border-radius: @borda; 
+}
+//Borda radius no topo e abaixo à direita
+.border-radius-top-right-and-bottom-right(@borda){
+    -webkit-border-top-right-radius: @borda;
+    -webkit-border-bottom-right-radius: @borda;
+
+    -moz-border-radius-topright: @borda;
+    -moz-border-radius-bottomright: @borda;
+
+    border-top-right-radius:@borda;
+    border-bottom-right-radius: @borda;
+}
