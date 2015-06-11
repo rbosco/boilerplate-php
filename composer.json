@@ -1,0 +1,20 @@
+{
+    "name": "romulobbosco/boilerplate-php",
+    "description": "Estrutura MVC em php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romulo B Bosco",
+            "email": "romulo.bbosco@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "php":">=5.3"
+    },
+    "autoload":{
+        "psr-4":{
+            "Boilerplate\\":"_app/"
+        }
+    }
+}
