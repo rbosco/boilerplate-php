@@ -4,11 +4,19 @@
  * Data criação: 28/05/2015
  * Descriação: Controlador da página inicial
  */
-class IndexController extends Controller{
+namespace Boilerplate\controllers;
+
+use Boilerplate\config\Application as Application;
+
+class IndexController extends Application{
     
     public function indexAction() {
-        
-        $this->view->render('default','index/index');
+        echo "HOME";
+//        $this->view->render('default','index/index');
+    }
+    
+    public function empresaAction(){
+        echo "empresa";
     }
 }
 
