@@ -5,9 +5,15 @@
  * Descrição: Arquivo de inicializacao da aplicação.
  */
 
-use Boilerplate\config\Application as Application;
+//Habilita a função de erros do PHP
+error_reporting(E_ALL ^ E_NOTICE);
 
+use Boilerplate\library\Application as Application;
+
+//Autocarregamento dos namespaces
 require_once ('vendor/autoload.php');
 
-$app = new Application();
+//Executa o Boilerplate
+$app = Application::getInstance();
+$app->run();
 
